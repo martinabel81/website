@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Martin Abel | Economist</title>
+<meta name="description" content="Martin Abel, Associate Professor of Economics at Bowdoin College. Research in development, labor and behavioral economics, with a focus on gender and discrimination.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav wrap">
+    <a class="brand" href="#top">Martin Abel</a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#students">Student Research</a></li>
+      <li><a href="assets/Martin-Abel_CV.pdf" target="_blank" rel="noopener">CV</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ABOUT -->
+  <section id="about" class="wrap about">
+    <img class="headshot" src="assets/headshot.jpg" alt="Martin Abel"
+         onerror="this.onerror=null;this.src='https://martinabelsite.wordpress.com/wp-content/uploads/2022/06/abel_martin_midd-website_upd.jpg'">
+    <div>
+      <h1>Martin Abel</h1>
+      <p class="role">Associate Professor of Economics, Bowdoin College</p>
+      <p>I am a development, labor and behavioral economist. Much of my work uses field and online experiments to study discrimination and gender in labor markets, how people search for jobs, and how behavioral tools can change what people do. A lot of it is set in South Africa, with projects in India, Mexico and Saudi Arabia.</p>
+      <p>I am a Research Fellow at <a href="https://www.iza.org" target="_blank" rel="noopener">IZA</a> and an Affiliate at <a href="https://www.povertyactionlab.org" target="_blank" rel="noopener">J-PAL</a>. I hold a PhD and an MPA in International Development from Harvard University and a Diplom from the University of Jena.</p>
+      <ul class="contact">
+        <li><a href="mailto:m.abel@bowdoin.edu">m.abel@bowdoin.edu</a></li>
+        <li><a href="https://scholar.google.com/citations?user=WJe3b0UAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a href="https://x.com/martinabel_econ" target="_blank" rel="noopener">@martinabel_econ</a></li>
+        <li><a href="assets/Martin-Abel_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research" class="wrap">
+    <h2>Research</h2>
+    <h3 class="sub">Recent publications</h3>
+    <div id="featured" class="featured-grid"></div>
+
+    <div class="list-head">
+      <h3 class="sub">All papers</h3>
+      <input id="search" type="search" placeholder="Search titles, coauthors, abstracts…" aria-label="Search papers">
+    </div>
+    <div class="filters" id="status-filters" role="group" aria-label="Filter by status"></div>
+    <div class="filters" id="tag-filters" role="group" aria-label="Filter by topic"></div>
+    <div id="paper-list"></div>
+    <p id="empty" class="muted" hidden>No papers match these filters.</p>
+
+    <h3 class="sub">Work in progress</h3>
+    <ul id="ongoing" class="ongoing"></ul>
+  </section>
+
+  <!-- TEACHING -->
+  <section id="teaching" class="wrap">
+    <h2>Teaching</h2>
+    <div class="teach-grid">
+      <div>
+        <h4>Bowdoin College</h4>
+        <ul><li class="muted">Courses to be added</li></ul>
+      </div>
+      <div>
+        <h4>Middlebury College</h4>
+        <ul>
+          <li>Economics of Discrimination (ECON 405)</li>
+          <li>Microeconomic Theory (ECON 255)</li>
+          <li>Senior Thesis Workshop (ECON 701/702)</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Harvard University <span class="muted">(Teaching Fellow)</span></h4>
+        <ul>
+          <li>Economic Development Policy Design (PED 102)</li>
+          <li>Introductory Economics (EC 10)</li>
+        </ul>
+      </div>
+      <div>
+        <h4>University of Cape Town</h4>
+        <ul><li>Econometrics (ECO 3021)</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- STUDENTS -->
+  <section id="students" class="wrap">
+    <h2>Student Research</h2>
+    <p class="lede">I work closely with undergraduates on original research. Several student projects have become published papers, including <a href="#paper-6" data-paper="6">a JEBO article</a> coauthored with 17 Bowdoin students.</p>
+    <h3 class="sub">Senior theses (Middlebury, 2021)</h3>
+    <div id="theses" class="student-grid"></div>
+    <h3 class="sub">COVID-19 senior seminar projects (2020)</h3>
+    <p class="muted small">Based on a survey of more than 1,600 respondents across all 50 U.S. states.</p>
+    <div id="covid" class="student-grid"></div>
+  </section>
+</main>
+
+<footer class="wrap footer">
+  <span>© <span id="yr"></span> Martin Abel</span>
+  <span>Department of Economics, Bowdoin College, Brunswick, ME</span>
+</footer>
+
+<dialog id="modal" aria-labelledby="m-title">
+  <button class="close" aria-label="Close">×</button>
+  <div id="modal-body"></div>
+</dialog>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
