@@ -18,6 +18,7 @@ window.SITE_DATA = {
       "featured": true,
       "figure": "assets/figures/reminders.png",
       "figureCaption": null,
+      "takeaway": null,
       "links": [
         [
           "PDF",
@@ -47,6 +48,7 @@ window.SITE_DATA = {
       "featured": true,
       "figure": "assets/figures/name-discrimination.png",
       "figureCaption": null,
+      "takeaway": null,
       "links": [
         [
           "PDF",
@@ -81,6 +83,7 @@ window.SITE_DATA = {
       "featured": true,
       "figure": "assets/figures/payment-schemes.png",
       "figureCaption": null,
+      "takeaway": null,
       "links": [
         [
           "PDF",
@@ -110,6 +113,7 @@ window.SITE_DATA = {
       "featured": true,
       "figure": "assets/figures/partisan.png",
       "figureCaption": null,
+      "takeaway": null,
       "links": [
         [
           "PDF",
@@ -139,6 +143,7 @@ window.SITE_DATA = {
       "featured": true,
       "figure": "assets/figures/vaccination.png",
       "figureCaption": null,
+      "takeaway": null,
       "links": [
         [
           "Published version",
@@ -164,6 +169,7 @@ window.SITE_DATA = {
       "featured": true,
       "figure": "assets/figures/women-blamed.png",
       "figureCaption": null,
+      "takeaway": null,
       "links": [
         [
           "PDF",
@@ -194,6 +200,7 @@ window.SITE_DATA = {
       "featured": false,
       "figure": null,
       "figureCaption": null,
+      "takeaway": null,
       "links": [
         [
           "PDF",
@@ -223,6 +230,7 @@ window.SITE_DATA = {
       "featured": false,
       "figure": null,
       "figureCaption": null,
+      "takeaway": null,
       "links": [
         [
           "PDF",
@@ -253,6 +261,7 @@ window.SITE_DATA = {
       "featured": false,
       "figure": null,
       "figureCaption": null,
+      "takeaway": null,
       "links": [
         [
           "PDF",
@@ -328,6 +337,7 @@ window.SITE_DATA = {
       "featured": false,
       "figure": null,
       "figureCaption": null,
+      "takeaway": null,
       "links": [
         [
           "Published version",
@@ -353,6 +363,7 @@ window.SITE_DATA = {
       "featured": false,
       "figure": null,
       "figureCaption": null,
+      "takeaway": null,
       "links": [
         [
           "PDF",
@@ -383,6 +394,7 @@ window.SITE_DATA = {
       "featured": false,
       "figure": null,
       "figureCaption": null,
+      "takeaway": null,
       "links": [
         [
           "PDF",
@@ -422,6 +434,7 @@ window.SITE_DATA = {
       "featured": false,
       "figure": null,
       "figureCaption": null,
+      "takeaway": null,
       "links": [
         [
           "Published version",
@@ -457,6 +470,7 @@ window.SITE_DATA = {
       "featured": false,
       "figure": null,
       "figureCaption": null,
+      "takeaway": null,
       "links": [
         [
           "Published version",
@@ -482,6 +496,7 @@ window.SITE_DATA = {
       "featured": false,
       "figure": null,
       "figureCaption": null,
+      "takeaway": null,
       "links": [
         [
           "Published version",
@@ -512,6 +527,7 @@ window.SITE_DATA = {
       "featured": false,
       "figure": null,
       "figureCaption": null,
+      "takeaway": null,
       "links": [
         [
           "Published version",
@@ -537,6 +553,7 @@ window.SITE_DATA = {
       "featured": false,
       "figure": null,
       "figureCaption": null,
+      "takeaway": null,
       "links": [
         [
           "PDF",
@@ -566,6 +583,7 @@ window.SITE_DATA = {
       "featured": false,
       "figure": null,
       "figureCaption": null,
+      "takeaway": null,
       "links": [
         [
           "PDF",
@@ -595,7 +613,8 @@ window.SITE_DATA = {
       ],
       "featured": true,
       "figure": "assets/figures/algorithm-aversion.png",
-      "figureCaption": null,
+      "figureCaption": "Writing time and quality under human vs. AI evaluation, by volunteers' alignment with the mission (Figure 3).",
+      "takeaway": "When an AI rather than a human grades their work, volunteers with low commitment to the cause write for less time and, without performance pay, produce lower-quality messages. Volunteers strongly aligned with the mission are unaffected.",
       "links": [
         [
           "PDF",
@@ -624,7 +643,8 @@ window.SITE_DATA = {
       ],
       "featured": true,
       "figure": "assets/figures/unpredictability.png",
-      "figureCaption": null,
+      "figureCaption": "Extra pay gig workers require for demanding contracts, by gender (estimates from Table 3).",
+      "takeaway": "Women need a larger pay increase than men to accept unpredictable jobs. For outside-hours, no-notice work, the wage women require to accept rises about 18%, compared with 9% for men.",
       "links": [
         [
           "PDF",
@@ -654,7 +674,8 @@ window.SITE_DATA = {
       ],
       "featured": true,
       "figure": "assets/figures/grade-inflation.png",
-      "figureCaption": null,
+      "figureCaption": "Wages managers assign by letter grade under standard, compressed and inflated grading (Figure 7).",
+      "takeaway": "Inflated grades lead to higher wages: managers pay candidates 12–14 SAT points more on average under inflated grading than under standard or compressed grading, even though candidate ability is the same. Coarser grading also flattens wage offers, paying top candidates less and weaker candidates more.",
       "links": [
         [
           "PDF",

@@ -33,7 +33,7 @@ section{padding:56px 0 8px}
 
 /* about */
 .about{display:grid;grid-template-columns:220px 1fr;gap:44px;align-items:start;padding-top:64px}
-.headshot{width:220px;height:260px;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow)}
+.headshot{width:220px;height:260px;object-fit:cover;object-position:61% 25%;border-radius:var(--radius);box-shadow:var(--shadow)}
 .role{font-size:1.1rem;color:var(--muted);margin:.3rem 0 1.2rem}
 .contact{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:1.4rem 0 0}
 .contact a{display:inline-block;padding:6px 14px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-size:.9rem;font-weight:500}
