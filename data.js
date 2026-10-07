@@ -675,7 +675,7 @@ window.SITE_DATA = {
       "featured": true,
       "figure": "assets/figures/grade-inflation.png",
       "figureCaption": "Wages managers assign by letter grade under standard, compressed and inflated grading (Figure 7).",
-      "takeaway": "Inflated grades lead to higher wages: managers pay candidates 12–14 SAT points more on average under inflated grading than under standard or compressed grading, even though candidate ability is the same. Coarser grading also flattens wage offers, paying top candidates less and weaker candidates more.",
+      "takeaway": "Inflated grades lead to higher wages: managers offer candidates more on average under inflated grading than under standard or compressed grading, even though candidate ability is the same. Coarser grading also flattens wage offers, paying top candidates less and weaker candidates more.",
       "links": [
         [
           "PDF",

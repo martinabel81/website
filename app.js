@@ -5,6 +5,8 @@
   const STATUS = { all: "All", published: "Published", working: "Working papers" };
 
   // ---------- helpers ----------
+  // Fill a section only if it exists, so a missing section never breaks the rest of the page.
+  const setHTML = (sel, html) => { const el = $(sel); if (el) el.innerHTML = html; };
   function bibtex(p) {
     const authors = /with \d+/.test(p.authors)
       ? "Abel, Martin and others"
@@ -106,8 +108,8 @@
         <div class="more">Abstract &amp; links →</div>
       </div>
     </button>`;
-  $("#featured").innerHTML = D.papers.filter(p => p.featured && p.status === "published").map(card).join("");
-  $("#featured-wp").innerHTML = D.papers.filter(p => p.featured && p.status === "working").sort((a, b) => b.year - a.year || b.id - a.id).map(card).join("");
+  setHTML("#featured", D.papers.filter(p => p.featured && p.status === "published").map(card).join(""));
+  setHTML("#featured-wp", D.papers.filter(p => p.featured && p.status === "working").sort((a, b) => b.year - a.year || b.id - a.id).map(card).join(""));
 
   // ---------- filters + list ----------
   const state = { status: "all", tag: null, q: "" };
