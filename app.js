@@ -85,16 +85,19 @@
   modal.addEventListener("click", e => { if (e.target === modal) closeModal(); });
 
   // ---------- featured ----------
-  $("#featured").innerHTML = D.papers.filter(p => p.featured).map(p => `
+  // Cards show the key figure on top when one exists; otherwise just the text.
+  const card = p => `
     <button class="fcard" data-paper="${p.id}">
-      <div class="thumb">${p.figure ? `<img src="${esc(p.figure)}" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'venue-mark',textContent:${esc(JSON.stringify(p.venue))}}))">` : `<div class="venue-mark">${esc(p.venue)}</div>`}</div>
+      ${p.figure ? `<div class="thumb"><img src="${esc(p.figure)}" alt="" loading="lazy" onerror="this.parentElement.remove()"></div>` : ""}
       <div class="body">
         <div class="title">${esc(p.title)}</div>
         <div class="authors">${esc(p.authors)}</div>
-        <div class="venue">${esc(p.venue)}, ${p.year}</div>
-        <div class="more">Abstract, figure &amp; links →</div>
+        <div class="venue">${p.status === "published" ? esc(p.venue) + ", " + p.year : esc(p.detail) + ", " + p.year}</div>
+        <div class="more">Abstract &amp; links →</div>
       </div>
-    </button>`).join("");
+    </button>`;
+  $("#featured").innerHTML = D.papers.filter(p => p.featured && p.status === "published").map(card).join("");
+  $("#featured-wp").innerHTML = D.papers.filter(p => p.featured && p.status === "working").sort((a, b) => b.year - a.year || b.id - a.id).map(card).join("");
 
   // ---------- filters + list ----------
   const state = { status: "all", tag: null, q: "" };
@@ -122,7 +125,8 @@
   }
 
   function renderList() {
-    const list = D.papers.filter(matches);
+    const order = { published: 0, working: 1 };
+    const list = D.papers.filter(matches).sort((a, b) => order[a.status] - order[b.status] || (a.status === "working" ? b.year - a.year || b.id - a.id : 0));
     $("#paper-list").innerHTML = list.map(p => `
       <div class="prow" id="row-${p.id}">
         <button aria-expanded="false">

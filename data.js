@@ -161,8 +161,8 @@ window.SITE_DATA = {
         "Gender",
         "Discrimination"
       ],
-      "featured": false,
-      "figure": null,
+      "featured": true,
+      "figure": "assets/figures/women-blamed.png",
       "figureCaption": null,
       "links": [
         [
@@ -578,20 +578,101 @@ window.SITE_DATA = {
       ],
       "media": [],
       "note": null
+    },
+    {
+      "id": 19,
+      "title": "Algorithm Aversion in Prosocial Tasks: Evidence from AI-Based Performance Evaluation",
+      "authors": "Martin Abel, Raghad S. Dawi, Tyler Lenk, Aidan Singer",
+      "venue": "Under review",
+      "year": 2026,
+      "status": "working",
+      "detail": "IZA DP 18678",
+      "abstract": "How do workers respond when artificial intelligence replaces human judgment in evaluating prosocial work? Partnering with a non-profit addressing food insecurity, we recruit 1,491 U.S. volunteers to write fundraising messages and cross-randomize evaluation by humans versus AI and the presence of performance pay. AI evaluation reduces effort by 11–14 percent among volunteers with low commitment to the cause, while having no effect on those strongly aligned with the mission. Performance pay fails to mitigate these adverse effects. Workers perceive AI as less effective at identifying quality, which appears to be the primary mechanism, and as less fair and transparent than human evaluation. Introducing an AI algorithm that explicitly applies human evaluation criteria does not mitigate these negative effects, suggesting that resistance to AI evaluation reflects deeper skepticism about machines' capacity for subjective judgment.",
+      "tags": [
+        "AI",
+        "Behavioral",
+        "Labor"
+      ],
+      "featured": true,
+      "figure": "assets/figures/algorithm-aversion.png",
+      "figureCaption": null,
+      "links": [
+        [
+          "PDF",
+          "https://docs.iza.org/dp18678.pdf"
+        ],
+        [
+          "IZA page",
+          "https://www.iza.org/publications/dp/18678"
+        ]
+      ],
+      "media": [],
+      "note": null
+    },
+    {
+      "id": 20,
+      "title": "The Price of Unpredictability: Scheduling Demands, Gender and Selection in the Gig Economy",
+      "authors": "Natasha Jha, Martin Abel, Patrizio Piraino",
+      "venue": "Under review",
+      "year": 2026,
+      "status": "working",
+      "detail": "IZA DP 18976",
+      "abstract": "We study how scheduling demands shape gig-work supply and its composition in an experiment with U.S. gig workers, eliciting reservation wages for contracts varying in advance notice, timing, and duration. No-notice contracts raise reservation wages by 13–14 percent, while outside-hours work with notice carries little penalty. Women require 5–6 percent more than men for outside-hours or no-notice work, and 8–9 percent more when combined. These gaps are largest among workers with heavy household-chore burdens and inflexible schedules. Higher-productivity workers also require larger no-notice premiums. At a given wage, demanding contracts therefore reduce labor supply and select a lower-productivity labor pool.",
+      "tags": [
+        "Gender",
+        "Labor"
+      ],
+      "featured": true,
+      "figure": "assets/figures/unpredictability.png",
+      "figureCaption": null,
+      "links": [
+        [
+          "PDF",
+          "https://docs.iza.org/dp18976.pdf"
+        ],
+        [
+          "IZA page",
+          "https://www.iza.org/publications/dp/18976"
+        ]
+      ],
+      "media": [],
+      "note": null
+    },
+    {
+      "id": 21,
+      "title": "Grade Inflation and the Interpretation of Labor Market Signals",
+      "authors": "Zhizhong Pu, Martin Abel, Jeffrey P. Carpenter",
+      "venue": "Under review",
+      "year": 2026,
+      "status": "working",
+      "detail": "IZA DP 18654",
+      "abstract": "We study how grading policies shape employers' interpretations of labor market signals embedded in academic credentials. In our experiment, hiring managers observe letter grades assigned to math tests taken by job candidates and make wage offers to match their beliefs about each candidate's underlying ability. We exogenously vary the coarseness of the grading scheme while holding candidate performance constant. As predicted, coarser grading leads managers to place less weight on grade signals and more on prior beliefs, reducing match efficiency. Departing from predictions, managers extract systematically higher signals from inflated grades, behaving as if candidates with As represent a positively selected pool. Furthermore, managers place greater decision weight on inflated As than on compressed Bs, creating a compounding wage advantage for candidates even though grade inflation is common knowledge. Considering the broader implications of our results, the shift toward prior-based evaluation under coarser grading falls disproportionately on female candidates, contributing to a wider gender wage gap among managers with gendered priors.",
+      "tags": [
+        "Labor",
+        "Gender",
+        "Discrimination"
+      ],
+      "featured": true,
+      "figure": "assets/figures/grade-inflation.png",
+      "figureCaption": null,
+      "links": [
+        [
+          "PDF",
+          "https://docs.iza.org/dp18654.pdf"
+        ],
+        [
+          "IZA page",
+          "https://www.iza.org/publications/dp/18654"
+        ]
+      ],
+      "media": [],
+      "note": null
     }
   ],
   "ongoing": [
     {
       "title": "Barriers to Female Labor Force Participation and Employment in Saudi Arabia",
       "authors": "Rema Hanna, Rohini Pande, Daniela Paz"
-    },
-    {
-      "title": "Grade Inflation",
-      "authors": "Jeff Carpenter, Zhizong Pu"
-    },
-    {
-      "title": "Job Flexibility",
-      "authors": "Natasha Jha, Patrizio Piraino"
     },
     {
       "title": "Sectoral Employment Training and Worker Retention",
