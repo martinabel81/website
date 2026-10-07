@@ -24,24 +24,34 @@
     return lines.join("\n");
   }
 
+  // Figure panel: key finding on top, figure (click to enlarge), source caption below.
   function figureHTML(p) {
     if (!p.figure) return "";
-    return `<figure class="figure"><img src="${esc(p.figure)}" alt="Key figure: ${esc(p.title)}" loading="lazy"
-      onerror="this.closest('figure').remove()">${p.figureCaption ? `<figcaption>${esc(p.figureCaption)}</figcaption>` : ""}</figure>`;
+    return `<figure class="figure">
+      ${p.takeaway ? `<div class="takeaway-label">Key finding</div><p class="takeaway">${esc(p.takeaway)}</p>` : ""}
+      <a href="${esc(p.figure)}" target="_blank" rel="noopener" title="Open full size">
+        <img src="${esc(p.figure)}" alt="Key figure: ${esc(p.title)}" loading="lazy"
+          onerror="const g=this.closest('.pgrid'); if(g) g.classList.add('nofig'); this.closest('figure').remove()"></a>
+      ${p.figureCaption ? `<figcaption>${esc(p.figureCaption)}</figcaption>` : ""}</figure>`;
   }
 
+  // Abstract and links on the left, figure on the right (stacks on phones).
   function detailHTML(p) {
     const links = p.links.map(([l, u]) => `<a class="btn" href="${esc(u)}" target="_blank" rel="noopener">${esc(l)}</a>`).join("");
     const media = p.media.length
       ? `<div class="media"><strong>Coverage:</strong> ${p.media.map(([n, u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(n)}</a>`).join(" · ")}</div>` : "";
     return `
-      ${figureHTML(p)}
-      <div class="abstract-label">Abstract</div>
-      <p class="abstract">${esc(p.abstract)}</p>
-      ${p.note ? `<p class="note">${esc(p.note)}</p>` : ""}
-      <div class="links">${links}<button class="btn bib-toggle" type="button">Cite (BibTeX)</button></div>
-      <pre class="bib">${esc(bibtex(p))}</pre>
-      ${media}`;
+      <div class="pgrid ${p.figure ? "" : "nofig"}">
+        <div class="ptext">
+          <div class="abstract-label">Abstract</div>
+          <p class="abstract">${esc(p.abstract)}</p>
+          ${p.note ? `<p class="note">${esc(p.note)}</p>` : ""}
+          <div class="links">${links}<button class="btn bib-toggle" type="button">Cite (BibTeX)</button></div>
+          <pre class="bib">${esc(bibtex(p))}</pre>
+          ${media}
+        </div>
+        ${figureHTML(p)}
+      </div>`;
   }
 
   function wireBib(root) {
