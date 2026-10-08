@@ -30,7 +30,8 @@ window.SITE_DATA = {
         ]
       ],
       "media": [],
-      "note": null
+      "note": null,
+      "audio": null
     },
     {
       "id": 2,
@@ -65,7 +66,8 @@ window.SITE_DATA = {
           "https://fortune.com/2023/09/24/affirmative-action-race-discrimination-hiring-black-sounding-names-study/"
         ]
       ],
-      "note": null
+      "note": null,
+      "audio": null
     },
     {
       "id": 3,
@@ -95,7 +97,8 @@ window.SITE_DATA = {
         ]
       ],
       "media": [],
-      "note": null
+      "note": null,
+      "audio": null
     },
     {
       "id": 4,
@@ -125,7 +128,8 @@ window.SITE_DATA = {
         ]
       ],
       "media": [],
-      "note": null
+      "note": null,
+      "audio": null
     },
     {
       "id": 5,
@@ -151,7 +155,8 @@ window.SITE_DATA = {
         ]
       ],
       "media": [],
-      "note": null
+      "note": null,
+      "audio": null
     },
     {
       "id": 6,
@@ -181,7 +186,8 @@ window.SITE_DATA = {
         ]
       ],
       "media": [],
-      "note": "Coauthored with Bowdoin students: Emma Bomfim, Izzy Cisneros, Jackson Coyle, Song Eraou, Martha Gebeyehu, Gerardo Hernandez, Julian Juantorena, Lizzy Kaplan, Danielle Marquez, Jack Mullen, Peyton Mulhern, Ayana Opong-Nyantekyi, Rin Osathanugrah, Joe Paul, Austin Philie, Luke Tingley, Jingyi Wang."
+      "note": "Coauthored with Bowdoin students: Emma Bomfim, Izzy Cisneros, Jackson Coyle, Song Eraou, Martha Gebeyehu, Gerardo Hernandez, Julian Juantorena, Lizzy Kaplan, Danielle Marquez, Jack Mullen, Peyton Mulhern, Ayana Opong-Nyantekyi, Rin Osathanugrah, Joe Paul, Austin Philie, Luke Tingley, Jingyi Wang.",
+      "audio": null
     },
     {
       "id": 7,
@@ -212,7 +218,8 @@ window.SITE_DATA = {
         ]
       ],
       "media": [],
-      "note": null
+      "note": null,
+      "audio": null
     },
     {
       "id": 8,
@@ -242,7 +249,8 @@ window.SITE_DATA = {
         ]
       ],
       "media": [],
-      "note": null
+      "note": null,
+      "audio": null
     },
     {
       "id": 9,
@@ -318,7 +326,8 @@ window.SITE_DATA = {
           "https://newsroom.iza.org/de/archive/research/do-workers-discriminate-against-female-bosses/"
         ]
       ],
-      "note": null
+      "note": null,
+      "audio": null
     },
     {
       "id": 10,
@@ -345,7 +354,8 @@ window.SITE_DATA = {
         ]
       ],
       "media": [],
-      "note": null
+      "note": null,
+      "audio": null
     },
     {
       "id": 11,
@@ -375,7 +385,8 @@ window.SITE_DATA = {
         ]
       ],
       "media": [],
-      "note": null
+      "note": null,
+      "audio": null
     },
     {
       "id": 12,
@@ -415,7 +426,8 @@ window.SITE_DATA = {
           "https://www.povertyactionlab.org/evaluation/role-reference-letters-and-skill-accreditation-south-african-labour-market"
         ]
       ],
-      "note": null
+      "note": null,
+      "audio": null
     },
     {
       "id": 13,
@@ -451,7 +463,8 @@ window.SITE_DATA = {
           "https://voxdev.org/topic/labour-markets/effect-plan-making-prompts-job-search-and-employment-south-africa"
         ]
       ],
-      "note": null
+      "note": null,
+      "audio": null
     },
     {
       "id": 14,
@@ -478,7 +491,8 @@ window.SITE_DATA = {
         ]
       ],
       "media": [],
-      "note": null
+      "note": null,
+      "audio": null
     },
     {
       "id": 15,
@@ -509,7 +523,8 @@ window.SITE_DATA = {
           "https://www.aehnetwork.org/blog/long-run-effects-of-forced-resettlement-evidence-from-apartheid-south-africa/"
         ]
       ],
-      "note": null
+      "note": null,
+      "audio": null
     },
     {
       "id": 16,
@@ -535,7 +550,8 @@ window.SITE_DATA = {
         ]
       ],
       "media": [],
-      "note": null
+      "note": null,
+      "audio": null
     },
     {
       "id": 17,
@@ -565,7 +581,8 @@ window.SITE_DATA = {
         ]
       ],
       "media": [],
-      "note": null
+      "note": null,
+      "audio": null
     },
     {
       "id": 18,
@@ -595,7 +612,8 @@ window.SITE_DATA = {
         ]
       ],
       "media": [],
-      "note": null
+      "note": null,
+      "audio": null
     },
     {
       "id": 19,
@@ -626,7 +644,11 @@ window.SITE_DATA = {
         ]
       ],
       "media": [],
-      "note": null
+      "note": null,
+      "audio": {
+        "src": "assets/audio/algorithm-aversion.m4a",
+        "length": "4 min"
+      }
     },
     {
       "id": 20,
@@ -656,7 +678,8 @@ window.SITE_DATA = {
         ]
       ],
       "media": [],
-      "note": null
+      "note": null,
+      "audio": null
     },
     {
       "id": 21,
@@ -687,7 +710,8 @@ window.SITE_DATA = {
         ]
       ],
       "media": [],
-      "note": null
+      "note": null,
+      "audio": null
     }
   ],
   "ongoing": [

@@ -37,6 +37,16 @@
       ${p.figureCaption ? `<figcaption>${esc(p.figureCaption)}</figcaption>` : ""}</figure>`;
   }
 
+  // AI-generated audio summary (optional per paper: audio: {src, length})
+  function audioHTML(p) {
+    if (!p.audio) return "";
+    return `<div class="audio">
+      <div class="audio-label">AI-generated audio summary${p.audio.length ? ` · ${esc(p.audio.length)}` : ""}</div>
+      <audio controls preload="none" src="${esc(p.audio.src)}"></audio>
+      <div class="audio-note">Created with Google NotebookLM from the paper. It may simplify or contain errors; the paper is the authoritative source.</div>
+    </div>`;
+  }
+
   // Abstract and links on the left, figure on the right (stacks on phones).
   function detailHTML(p) {
     const links = p.links.map(([l, u]) => `<a class="btn" href="${esc(u)}" target="_blank" rel="noopener">${esc(l)}</a>`).join("");
@@ -48,6 +58,7 @@
           <div class="abstract-label">Abstract</div>
           <p class="abstract">${esc(p.abstract)}</p>
           ${p.note ? `<p class="note">${esc(p.note)}</p>` : ""}
+          ${audioHTML(p)}
           <div class="links">${links}<button class="btn bib-toggle" type="button">Cite (BibTeX)</button></div>
           <pre class="bib">${esc(bibtex(p))}</pre>
           ${media}
@@ -105,7 +116,7 @@
         <div class="title">${esc(p.title)}</div>
         <div class="authors">${esc(p.authors)}</div>
         <div class="venue">${p.status === "published" ? esc(p.venue) + ", " + p.year : esc(p.detail) + ", " + p.year}</div>
-        <div class="more">Abstract &amp; links →</div>
+        <div class="more">${p.audio ? "Abstract, audio &amp; links →" : "Abstract &amp; links →"}</div>
       </div>
     </button>`;
   setHTML("#featured", D.papers.filter(p => p.featured && p.status === "published").map(card).join(""));
@@ -143,7 +154,7 @@
       <div class="prow" id="row-${p.id}">
         <button aria-expanded="false">
           <div>
-            <div class="ptitle">${esc(p.title)}<span class="caret">›</span>${p.status === "working" ? '<span class="badge">Working paper</span>' : ""}</div>
+            <div class="ptitle">${esc(p.title)}<span class="caret">›</span>${p.status === "working" ? '<span class="badge">Working paper</span>' : ""}${p.audio ? '<span class="badge badge-audio">Audio</span>' : ""}</div>
             <div class="authors">${esc(p.authors)}</div>
             <div class="venue">${esc(p.venue)}${p.detail && p.status === "published" ? ", " + esc(p.detail) : ""}</div>
           </div>
